@@ -1,0 +1,10 @@
+#life-dots-host {
+  all: initial;
+  position: fixed !important;
+  top: 16px !important;
+  right: 16px !important;
+  z-index: 2147483647 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+  line-height: 1 !important;
+  pointer-events: auto !important;
+}

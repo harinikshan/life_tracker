@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="step1" class="step">
+    <p class="question">When were you born?</p>
+    <input type="date" id="birth-date">
+    <button id="next-btn">Next</button>
+    <p id="error1" class="error"></p>
+  </div>
+
+  <div id="step2" class="step" style="display:none">
+    <p class="question">How long do you expect to live?</p>
+    <div class="input-row">
+      <input type="number" id="lifespan" value="80" min="1" max="150">
+      <span class="unit">years</span>
+    </div>
+    <p class="hint">global avg ~73 years</p>
+    <button id="save-btn">See your time</button>
+    <p id="error2" class="error"></p>
+  </div>
+
+  <div id="reveal" style="display:none">
+    <div class="reveal-dots" id="dots-preview"></div>
+    <p class="reveal-pct" id="life-pct"></p>
+    <p class="reveal-remaining" id="life-remaining"></p>
+    <div class="btn-row">
+      <button id="edit-btn">Edit</button>
+      <button id="toggle-btn">Hide</button>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
